@@ -25,7 +25,7 @@ QNSM应用层开发简介。
     
       - dns_udp_info_init
     
-        分配对应的DPDK内存空间用于解析字段。调用DPDK函数rte_zmalloc_socket为dns_info分配内存空间，并将部分内存置0.
+        分配对应的DPDK内存空间用于解析字段。调用DPDK函数rte_zmalloc_socket为dns_info分配内存空间，并将这部分内存置0.
     
     - qnsm_dpi_prot_reg
     
@@ -69,6 +69,6 @@ QNSM应用层开发简介。
 
 需要在qnsm_session.c添加new_procotol_init()，例如增加mqtt_init()。
 
-发送至kafka时，在kafka中新建topic，还需要在qnsm_sessm.xml增加相应的protocol。
+发送至kafka时，在kafka中新建topic，还需要在qnsm_edge.xml增加相应的protocol，在qnsm_edge.c里加上xxx_init()用于发kafka，qnsm_kafka_ex.h中加上定义，如qnsm_mqtt。
 
   
