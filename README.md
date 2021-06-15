@@ -7,7 +7,7 @@
 | Date       | Auther  | Title                                                        | Intro                         |
 | ---------- | ------- | ------------------------------------------------------------ | ----------------------------- |
 | 2021.04.07 | BlcDing | [DPDK overview](./DPDK-learning-by-BlcDing/DPDK-overview.md) | 简单介绍了DPDK & DPDK环境配置 |
-| 2021.06.15 | Mikewyf | [QNSM_development](./qnsm_doc/qnsm_development.md)           | 简单介绍了QNSM & QNSM执行流程 |
-| 2021.06.15 | Mikewyf | [QNSM_install](./qnsm_doc/qnsm_install.md)                   | QNSM安装流程                  |
-| 2021.06.15 | Mikewyf | [QNSM_configure](./qnsm_doc/qnsm_configure.md)               | QNSM配置方式                  |
+| 2021.06.15 | Mikewyf | [QNSM_development](./qnsm_doc/QNSM_development.md)           | 简单介绍了QNSM & QNSM执行流程 |
+| 2021.06.15 | Mikewyf | [QNSM_install](./qnsm_doc/QNSM_install.md)                   | QNSM安装流程                  |
+| 2021.06.15 | Mikewyf | [QNSM_configure](./qnsm_doc/QNSM_configure.md)               | QNSM配置方式                  |
 
