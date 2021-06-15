@@ -45,7 +45,7 @@ $ export RTE_TARGET=x86_64-native-linuxapp-gcc
 $ make install T=${RTE_TARGET} DESTDIR=install
 ```
 
-编译dpdk-stable-16.11.2时，可能会报"提供给函数‘ndo_dflt_bridge_getlink’的实参太少”错误，可参考https://blog.csdn.net/li727507857/article/details/102564302/解决。
+编译dpdk-stable-16.11.2时，可能会报"提供给函数‘ndo_dflt_bridge_getlink’的实参太少”错误，可参考https://blog.csdn.net/li727507857/article/details/102564302解决。
 
 ## **编译**
 
