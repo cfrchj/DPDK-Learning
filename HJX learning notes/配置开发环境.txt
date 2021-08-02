@@ -1,0 +1,30 @@
+配置linux（Ubuntu20.04）虚拟机环境
+
+① Windows10上安装VMware Workstation pro：
+https://cn.ubuntu.com/download/desktop
+② Ubuntu中文站下载Ubuntu桌面版ios文件：
+   https://cn.ubuntu.com/download/desktop
+③ 跟随安装教程配置虚拟机设置：
+https://www.bilibili.com/video/BV1Dv411p7AS
+
+ubuntu中下载VScode：
+详细步骤参见：https://www.bilibili.com/video/BV1JM4y1u7pG
+
+浏览器进入visual studio code官网下载（后缀为.deb文件）
+
+选择“在终端打开”，输入命令安装：
+
+下载扩展包：
+1. C/C++
+2. C/C++ compile run
+3. Code runner
+
+编译环境的安装：
+要进行C语言编程，还需要有个C语言的编译器
+安装教程：https://blog.csdn.net/zimuzi2019/article/details/106861692
+在终端输入
+sudo apt-get update
+sudo apt-get install gcc
+sudo apt-get install g++
+sudo apt-get install gdb
+
