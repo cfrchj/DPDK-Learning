@@ -20,7 +20,7 @@
 
 通过helloworld项目的流程，能更好的理解下图
 
-<img src="./img/DPDK-helloworld_2.svg" alt="DPDK-helloworld_2" style="zoom:80%;" />
+<img src="./img/DPDK-helloworld_2.svg" alt="DPDK-helloworld_2" style="zoom: 50%;" />
 
 ### 4.lcore
 
@@ -107,7 +107,7 @@ eal_thread_loop(__attribute__((unused)) void *arg)
 
 这里调用了linux库函数read和write，把c作为消息传递。管道的模型如下图所示：
 
-<img src="./img/DPDK-helloworld_3.png" alt="DPDK-helloworld_3" style="zoom: 67%;" />
+<img src="./img/DPDK-helloworld_3.png" alt="DPDK-helloworld_3" style="zoom: 50%;" />
 
 ### 6.helloworld中出现的c语言语法
 
@@ -150,4 +150,69 @@ static int lcore_hello(__attribute__((unused)) void *arg){} //定义函数
 int (*f)(void *); //定义一个函数指针
 f = lcore_hello //把函数lcore_hello赋给指针变量f, 使f指向lcore_hello函数
 ```
+
+### 7.Makefile
+
+在[DPDK overview](./DPDK-learning-by-BlcDing/DPDK-overview.md)中对helloworld项目进行编译时，执行了以下命令，设置了`RTE_SDK`
+
+```
+make RTE_SDK=/home/dpdk-stable-16.11.11 RTE_TARGET=x86_64-native-linuxapp-gcc
+./build/helloworld
+```
+
+helloworld Makefile源码如下
+
+```makefile
+#如果参数RTE_SDK未设置，即与逗号后相等，为true，执行ifeq内的命令
+ifeq ($(RTE_SDK),)
+$(error "Please define RTE_SDK environment variable")
+endif
+```
+
+```makefile
+# Default target, can be overriden by command line or environment
+RTE_TARGET ?= x86_64-native-linuxapp-gcc
+```
+
+```makefile
+# 文件包含
+include $(RTE_SDK)/mk/rte.vars.mk
+...
+include $(RTE_SDK)/mk/rte.extapp.mk
+```
+
+```makefile
+# 编译生成的目标文件名称
+# binary name
+APP = helloworld
+```
+
+```makefile
+# all source are stored in SRCS-y
+SRCS-y := main.c
+```
+
+```makefile
+# CFLAGS：提供给C编译器的额外标志
+CFLAGS += -O3
+CFLAGS += $(WERROR_FLAGS)
+```
+
+#### 7.1.Makefile中的条件判断
+
+| 关键字 | 功能                                            |
+| ------ | ----------------------------------------------- |
+| ifeq   | 判断参数是否不相等，相等为 true，不相等为 false |
+| ifneq  | 判断参数是否不相等，不相等为 true，相等为 false |
+| ifdef  | 判断是否有值，有值为 true，没有值为 false       |
+| ifndef | 判断是否有值，没有值为 true，有值为 false       |
+
+#### 7.2.Makefile中的赋值运算符
+
+| 名称        | 功能                                                         |
+| ----------- | ------------------------------------------------------------ |
+| 简单赋值 =  | 编程语言中常规理解的赋值方式，只对当前语句的变量有效         |
+| 递归赋值 := | 赋值语句可能影响多个变量，所有目标变量相关的其他变量都受影响 |
+| 条件赋值 ?= | 如果变量未定义，则使用符号中的值定义变量如果该变量已经赋值，则该赋值语句无效 |
+| 追加赋值 += | 原变量用空格隔开的方式追加一个新值                           |
 
