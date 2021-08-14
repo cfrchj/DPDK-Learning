@@ -387,12 +387,7 @@ ADD_EXECUTABLE(demo2  ${DIR_SRCS})  #makefile是$() cmake是${}
 
 文件目录如下，需要每个目录写出CMakeLists.txt
 
-── CMakeLists.txt
-├── demo.cpp
-└── mylib
-    ├── CMakeLists.txt
-    ├── mymath.cpp
-    └── mymath.hpp
+<img src="./c_make/1.png">
 
  mylib中的CMakeLists.txt
 
@@ -422,14 +417,7 @@ TARGET_LINK_LIBRARIES(demo3 Mylib)  #为target添加需要链接的共享库
 
 ### 3.3.4 多目录多文件之标准工程格式
 
-├── CMakeLists.txt
-├── mylib
-│   ├── CMakeLists.txt
-│   ├── mymath.cpp
-│   └── mymath.hpp
-└── src
-    ├── CMakeLists.txt
-    └── demo.cpp
+<img src="./c_make/2.png">
 
 src下的CMakeLists.txt
 
