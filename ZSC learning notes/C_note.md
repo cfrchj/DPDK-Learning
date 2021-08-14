@@ -67,7 +67,7 @@ void write_extern(void)
    } 
   ```
 
-  ![1](./c_note\1.png)
+  <img src="./c_note/1.png">
 
 - 深拷贝：拷贝了所有数据与地址空间
 
@@ -103,7 +103,7 @@ void write_extern(void)
    } 
   ```
 
-  ![2](./c_note\2.png)
+  <img src="./c_note/2.png">
 
 # 2 位运算符
 
