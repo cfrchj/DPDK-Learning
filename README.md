@@ -14,5 +14,5 @@
 | 2021.08.13 | BlcDing | [DPDK helloworld](./DPDK-learning-by-BlcDing/DPDK-helloworld.md) | 通过学习helloworld，介绍了`rte_eal_init`函数流程 |
 | 2021.08.14 | ZSC     | [c_note](./ZSC_learning_notes/c_note.md)                     | C语言部分不常用的知识以及函数、指针等笔记        |
 | 2021.08.14 | ZSC     | [cmake_note](./ZSC_learning_notes/cmake_note.md)             | makefile、cmake基础知识的笔记                    |
-| 2021.08.29 | ZSC     | [.c gcc make makefile cmake gdb关系](./ZSC_learning_notes/.c gcc make makefile cmake gdb关系.md) | 介绍了.c gcc make makefile cmake gdb关系         |
+| 2021.08.29 | ZSC     | [.c gcc make makefile cmake gdb关系](./ZSC_learning_notes/.c_gcc_make_makefile_cmake_gdb关系.md) | 介绍了.c gcc make makefile cmake gdb关系         |
 
