@@ -15,4 +15,4 @@
 | 2021.08.14 | ZSC     | [c_note](./ZSC_learning_notes/c_note.md)                     | C语言部分不常用的知识以及函数、指针等笔记        |
 | 2021.08.14 | ZSC     | [cmake_note](./ZSC_learning_notes/cmake_note.md)             | makefile、cmake基础知识的笔记                    |
 | 2021.08.29 | ZSC     | [.c gcc make makefile cmake gdb关系](./ZSC_learning_notes/.c_gcc_make_makefile_cmake_gdb关系.md) | 介绍了.c gcc make makefile cmake gdb关系         |
-| 2021.09.01 | Potato-Hu | [.C 内存管理](./HJX learning notes/C 内存管理.md)   | 介绍了c语言内存管理|
+| 2021.09.01 | Potato-Hu | [C 内存管理](./HJX learning notes/C 内存管理.md)   | 介绍了c语言内存管理|
