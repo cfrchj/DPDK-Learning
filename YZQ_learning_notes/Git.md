@@ -27,7 +27,7 @@ Git 是一个开源的***分布式版本控制系统***，用于敏捷高效地�
 
  因此Git 项目拥有三个阶段：*工作区、暂存区以及 Git 目录。*
 
-<img src="C:\Users\颜泽卿\AppData\Roaming\Typora\typora-user-images\image-20210829103614248.png" alt="image-20210829103614248" style="zoom:50%;" />
+<img src="C:\Users\颜泽卿\AppData\Roaming\Typora\typora-user-images\image-20210905201951553.png" alt="image-20210905201951553" style="zoom:67%;" />
 
 - 工作区：包括git已经管理的文件区域和新增以及修改的文件区域；
 - 暂存区：把工作区中的部分或者全部已经确认需要保存的文件提交至暂存区，先保存一下，如果直接确认可以提交到本地仓库中；如果暂时不能做决定可以暂时先放到暂存区，等可以做决定了，再进行下一步操作。
@@ -83,7 +83,7 @@ $ git clone https://github.com/E0HYL/AndrozooDownloader.git myandrozoo
 
 这会执行与上一条命令相同的操作，但目标目录名变为了 `myandrozoo`。
 
-<img src="C:\Users\颜泽卿\AppData\Roaming\Typora\typora-user-images\image-20210829133323058.png" alt="image-20210829133323058" style="zoom: 80%;" />
+ ![image-20210905202041861](C:\Users\颜泽卿\AppData\Roaming\Typora\typora-user-images\image-20210905202041861.png)
 
 Git 支持多种数据传输协议。 上面的例子使用的是 `https://` 协议，不过你也可以使用 `git://` 协议或者使用 SSH 传输协议，比如 `user@server:path/to/repo.git` 。
 
@@ -171,7 +171,7 @@ $ vim .gitignore
 
 类似Linux的操作，编辑.`gitignore`文件，输入想要忽略的文件类型，：wq退出保存即可。
 
-<img src="C:\Users\颜泽卿\AppData\Roaming\Typora\typora-user-images\image-20210829141817064.png" alt="image-20210829141817064" style="zoom:80%;" />
+<img src="C:\Users\颜泽卿\AppData\Roaming\Typora\typora-user-images\image-20210905202120693.png" alt="image-20210905202120693" style="zoom:67%;" />
 
 #### 6.移除文件--git rm
 
@@ -394,7 +394,7 @@ Merge made by the 'recursive' strategy.
 
 `git merge`命令用于合并指定分支到当前分支。合并后，再查看README.txt的内容，就可以看到，和`dev`分支的最新提交是完全一样的。
 
-<img src="C:\Users\颜泽卿\AppData\Roaming\Typora\typora-user-images\image-20210829161036146.png" alt="image-20210829161036146" style="zoom:80%;" />
+<img src="C:\Users\颜泽卿\AppData\Roaming\Typora\typora-user-images\image-20210905202223140.png" alt="image-20210905202223140" style="zoom:67%;" />
 
 合并完成后，就可以放心地删除`dev`分支了：
 
@@ -613,8 +613,6 @@ To https://gitee.com/yan-zeqing0628/gittest.git
 ```
 
 
-
-==
 
 
 
