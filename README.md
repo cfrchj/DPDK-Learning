@@ -17,3 +17,6 @@
 | 2021.08.29 | ZSC     | [.c gcc make makefile cmake gdb关系](./ZSC_learning_notes/.c_gcc_make_makefile_cmake_gdb关系.md) | 介绍了.c gcc make makefile cmake gdb关系         |
 | 2021.09.01 | Potato-Hu |[C_内存管理.md](./HJX_learning_notes/C_内存管理.md)| 介绍了c语言内存管理|
 | 2021.09.02 | ZSC |[cJson源码介绍](./ZSC_learning_notes/cjson_note.md)| cjson源码简单介绍 |
+| 2021.09.18 | Potato-Hu |[链表.md](./HJX_learning_notes/链表.md)| 介绍了c语言链表|
+| 2021.09.18 | Potato-Hu |[栈和队列.md](./HJX_learning_notes/栈和队列.md)| 介绍了c语言栈和队列|
+| 2021.09.18 | Potato-Hu |[动态内存管理.md](./HJX_learning_notes/动态内存管理.md)| 介绍了动态内存管理|
