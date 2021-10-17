@@ -21,4 +21,5 @@
 | 2021.09.18 | Potato-Hu |[栈和队列.md](./HJX_learning_notes/栈和队列.md)| 介绍了c语言栈和队列|
 | 2021.09.18 | Potato-Hu |[动态内存管理.md](./HJX_learning_notes/动态内存管理.md)| 介绍了动态内存管理|
 | 2021.09.19 | BlcDing |[pytorch-learning](./DPDK-learning-by-BlcDing\pytorch-learning.md)| pytorch学习 |
+| 2021.10.17 | BlcDing |[DPDK l2fwd](./DPDK-learning-by-BlcDing/DPDK-l2fwd.md)| DPDK l2fwd |
 
