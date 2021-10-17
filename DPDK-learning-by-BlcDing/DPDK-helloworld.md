@@ -153,7 +153,7 @@ f = lcore_hello //把函数lcore_hello赋给指针变量f, 使f指向lcore_hello
 
 ### 7.Makefile
 
-在[DPDK overview](./DPDK-learning-by-BlcDing/DPDK-overview.md)中对helloworld项目进行编译时，执行了以下命令，设置了`RTE_SDK`
+在[DPDK overview](./DPDK-overview.md)中对helloworld项目进行编译时，执行了以下命令，设置了`RTE_SDK`
 
 ```
 make RTE_SDK=/home/dpdk-stable-16.11.11 RTE_TARGET=x86_64-native-linuxapp-gcc
