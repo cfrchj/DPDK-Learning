@@ -25,6 +25,7 @@
 | 2021.10.31 | BlcDing |[DPDK l3fwd](./DPDK-learning-by-BlcDing/DPDK-l3fwd.md)| DPDK l3fwd |
 | 2021.10.31 | ZSC |[论用户态协议栈](./ZSC_learning_notes/论用户态协议栈.md)| 介绍UIO以及利用UIO驱动的技术 |
 | 2021.11.04 | ZSC |[basicfwd源码阅读](./ZSC_learning_notes/basicfwd源码阅读.md)| basicfwd源码阅读 |
+| 2021.11.07 | ZSC |[GDB的基本使用](./ZSC_learning_notes/GDB的基本使用.md)| GDB基本使用 |
 
 
 
